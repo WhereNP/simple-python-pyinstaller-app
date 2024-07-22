@@ -33,8 +33,8 @@ pipeline {
                 }
             }
             steps {
-                sh 'pyinstaller --onefile sources/add2vals.py' 
-            }
+                sh '/root/.pyenv/versions/2.7.17/bin/pyinstaller --onefile sources/add2vals.py' 
+            }      
             post {
                 success {
                     archiveArtifacts 'dist/add2vals' 
